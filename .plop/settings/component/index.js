@@ -14,29 +14,29 @@ module.exports = {
     }
   ],
   actions: [
-    // index.ts
-    {
-      type: 'add',
-      path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/index.ts',
-      templateFile: 'templates/component/index.ts.hbs'
-    },
     // component
     {
       type: 'add',
-      path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/{{pascalCase name}}.tsx',
+      path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/index.tsx',
       templateFile: 'templates/component/component.tsx.hbs'
     },
     // storybook
-    {
-      type: 'add',
-      path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-      templateFile: 'templates/component/stories.tsx.hbs'
-    },
+    // {
+    //   type: 'add',
+    //   path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/index.stories.tsx',
+    //   templateFile: 'templates/component/stories.tsx.hbs'
+    // },
     // tests
+    // {
+    //   type: 'add',
+    //   path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/index.test.tsx',
+    //   templateFile: 'templates/component/test.tsx.hbs'
+    // },
+    // styles
     {
       type: 'add',
-      path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
-      templateFile: 'templates/component/test.tsx.hbs'
+      path: '../src/components/ui/{{componentType}}/{{pascalCase name}}/index.styles.tsx',
+      templateFile: 'templates/component/styles.tsx.hbs'
     }
   ]
 }

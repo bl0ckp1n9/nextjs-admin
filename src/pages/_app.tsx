@@ -7,8 +7,8 @@ import '@/styles/globals.css'
 
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
-
-import MainLayout from '@/components/ui/templates/main-layout'
+// eslint-disable-next-line import-helpers/order-imports
+import MainTemplate from '@/templates/MainTemplate'
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -31,6 +31,6 @@ const MyApp = ({ Component, pageProps }: Props) => {
   )
 }
 
-const getDefaultLayout = (page: ReactNode) => <MainLayout>{page}</MainLayout>
+const getDefaultLayout = (page: ReactNode) => <MainTemplate>{page}</MainTemplate>
 
 export default MyApp
