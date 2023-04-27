@@ -37,7 +37,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
-    "react-query": "^3.39.3"
+    "react-query": "^3.39.3",
+    "react-toastify": "^9.1.2"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "6.5.16",

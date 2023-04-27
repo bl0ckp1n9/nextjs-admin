@@ -1,6 +1,7 @@
-import Sidebar from '@/organisms/Sidebar'
 import cn from 'classnames'
 import { PropsWithChildren } from 'react'
+
+import Sidebar from '@/components/Sidebar'
 
 export default function MainTemplate({ children }: PropsWithChildren) {
   return (

@@ -1,6 +1,7 @@
-import LoginForm from '@/organisms/LoginForm'
 import LoginTemplate from '@/templates/LoginTemplate'
 import { ReactElement } from 'react'
+
+import LoginForm from '@/components/LoginForm'
 
 function Login() {
   return <LoginForm />

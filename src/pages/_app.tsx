@@ -3,12 +3,14 @@ import { AppProps } from 'next/app'
 // eslint-disable-next-line import-helpers/order-imports
 import React, { ReactElement, ReactNode } from 'react'
 
+import 'react-toastify/dist/ReactToastify.css'
 import '@/styles/globals.css'
 
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 // eslint-disable-next-line import-helpers/order-imports
 import MainTemplate from '@/templates/MainTemplate'
+import { ToastContainer } from 'react-toastify'
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -26,6 +28,7 @@ const MyApp = ({ Component, pageProps }: Props) => {
   return (
     <QueryClientProvider client={queryClient}>
       {getLayout(<Component {...pageProps} />)}
+      <ToastContainer autoClose={2000} theme="colored" />
       <ReactQueryDevtools initialIsOpen={true} />
     </QueryClientProvider>
   )
